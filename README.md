@@ -98,7 +98,7 @@ The following code snippet generates the JWT using your Client Credentials:
 };
 	const token = jwt.sign(payload, config.APISecret);
 ```
-After you submit an email address, it will post the entered information and the email will be used to make a **Retrieve User** Zoom API call and you will be redirected to localhost:3000/userinfo page that displays the API response - information related to the user. This is achieved through an HTTP POST method. You can make API calls to other ZOOM endpoints by replacing the uri shown in the snippet below with another uri of your choice. You can find more about ZOOM APIs here. 
+localhost:3000/v1/userinfo:  it will post the entered information and the email will be used to make a **Retrieve User** Zoom API call that displays the API response - information related to the user. This is achieved through an HTTP POST method. You can make API calls to other ZOOM endpoints by replacing the uri shown in the snippet below with another uri of your choice. You can find more about ZOOM APIs here. 
 
  ```
     var options = {
