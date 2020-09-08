@@ -28,7 +28,6 @@ app.post('/v1/userinfo', (req, res) => {
     payload.iss = req.body.APIKey
     payload.exp = ((new Date()).getTime() + 5000)
     token = jwt.sign(payload, req.body.APISecret);
-    // console.log("payload",payload);
     //Store the options for Zoom API which will be used to make an API call later.
     var options = {
         //You can use a different uri if you're making an API call to a different Zoom endpoint.
@@ -71,7 +70,6 @@ app.post('/v1/getMeeting', (req, res) => {
     payload.exp = ((new Date()).getTime() + 5000)
     token = jwt.sign(payload, req.body.APISecret);
     var meetingId = req.body.meetingId;
-    // console.log("payload",payload);
     //Store the options for Zoom API which will be used to make an API call later.
     var options = {
         //You can use a different uri if you're making an API call to a different Zoom endpoint.
