@@ -1,6 +1,7 @@
-# Make Zoom API call using JWT Using Node JS
+# Node JS App to Make Zoom API call using JWT
 
 > With this NodeJS Application, you can learn how to generate JWT and use the JWT to authenticate and make a Zoom API call. Follow the steps below to install the Application and run it on your computer. 
+> Zoom + Node = Nodified Zoom.
 
 # Getting Started
 
