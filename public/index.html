@@ -1,33 +1,112 @@
-	<!DOCTYPE HTML>
-	<html>
-	<head>
-	<title> Home Page </title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	</head>
-	<body>
-	<div class="instruction">
-	<p> Application to Test Zoom Api Integration <a href="https://marketplace.zoom.us/docs/api-reference/zoom-api/users/user">this</a> API call.</p>
-	</div>
-	<div class="container">
-	<form action="/userinfo" method="post">
-	<div class="row">
-	    <div class="col-25">
-			API Usage Details.
+<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="Make_Zoom_API_call_using_JWT_Using_Node_JS_0"></a>Make Zoom API call using JWT Using Node JS</h1>
+<blockquote>
+<p class="has-line-data" data-line-start="2" data-line-end="3">With this NodeJS Application, you can learn how to generate JWT and use the JWT to authenticate and make a Zoom API call. Follow the steps below to install the Application and run it on your computer.</p>
+</blockquote>
+<h2 class="code-line" data-line-start=4 data-line-end=5 ><a id="Getting_Started_4"></a>Getting Started</h2>
+<h2 class="code-line" data-line-start=6 data-line-end=7 ><a id="API_Usage_Details_for_zoomnodeintegration_application_6"></a>API Usage Details for zoom-node-integration application.</h2>
+<h3 class="code-line" data-line-start=8 data-line-end=9 ><a id="API_userinfo_8"></a>API userinfo.</h3>
+<p class="has-line-data" data-line-start="9" data-line-end="10"><a href="http://localhost:3000/v1/userinfo">http://localhost:3000/v1/userinfo</a></p>
+<pre><code>POST Param
 
-			http://localhost:3000/v1/userinfo
-				POST Param
-			
-					   "APIKey":"iHUCbf7HSPumwF2Dyj1eGA"
-					   "email":"sourabhsethi8888@gmail.com"
-					   "APISecret":"nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
-		</div>
-	</div>
-	<div class="row">
-	    <input type="submit" value="Submit">
-	</div>
-</form>
-	  </div>
-	
+    &quot;APIKey&quot;:&quot;iHUCbf7HSPumwF2Dyj1eGA1234&quot;
+    &quot;email&quot;:&quot;sourabhsethi8888@gmail.com&quot;
+    &quot;APISecret&quot;:&quot;1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO&quot;
+</code></pre>
+<h3 class="code-line" data-line-start=17 data-line-end=18 ><a id="API_listMeeting_17"></a>API listMeeting.</h3>
+<p class="has-line-data" data-line-start="18" data-line-end="19"><a href="http://localhost:3000/v1/listMeeting">http://localhost:3000/v1/listMeeting</a></p>
+<pre><code>POST Param
 
-	</body>
-	</html>
+     &quot;APIKey&quot;:&quot;iHUCbf7HSPumwF2Dyj1eGA1234&quot;
+     &quot;email&quot;:&quot;sourabhsethi8888@gmail.com&quot;
+     &quot;APISecret&quot;:&quot;1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO&quot;
+</code></pre>
+<h3 class="code-line" data-line-start=26 data-line-end=27 ><a id="API_createMeeting_26"></a>API createMeeting.</h3>
+<p class="has-line-data" data-line-start="27" data-line-end="28"><a href="http://localhost:3000/v1/createMeeting">http://localhost:3000/v1/createMeeting</a></p>
+<pre><code>POST Param
+    
+    APIKey:&quot;iHUCbf7HSPumwF2Dyj1eGA1234&quot;
+    email:&quot;sourabhsethi8888@gmail.com&quot;
+    APISecret:&quot;1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO&quot;
+    topic : &quot;Test Portal Integration&quot;
+    type : 2 (Integer)
+</code></pre>
+<h3 class="code-line" data-line-start=37 data-line-end=38 ><a id="API_deleteMeeting_37"></a>API deleteMeeting.</h3>
+<p class="has-line-data" data-line-start="38" data-line-end="39"><a href="http://localhost:3000/v1/deleteMeeting">http://localhost:3000/v1/deleteMeeting</a></p>
+<pre><code>POST Param
+    
+    APIKey:&quot;iHUCbf7HSPumwF2Dyj1eGA1234&quot;
+    APISecret:&quot;1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO&quot;
+    meetingId: 1234567 (Integer)
+</code></pre>
+<h3 class="code-line" data-line-start=46 data-line-end=47 ><a id="API_getMeeting_46"></a>API getMeeting.</h3>
+<p class="has-line-data" data-line-start="47" data-line-end="48"><a href="http://localhost:3000/v1/getMeeting">http://localhost:3000/v1/getMeeting</a></p>
+<pre><code>POST Param
+    
+    APIKey:&quot;iHUCbf7HSPumwF2Dyj1eGA1234&quot;
+    APISecret:&quot;1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO&quot;
+    meetingId: 1234567 (Integer)
+</code></pre>
+<h3 class="code-line" data-line-start=55 data-line-end=56 ><a id="Install_55"></a>Install</h3>
+<p class="has-line-data" data-line-start="57" data-line-end="59">Clone the repo using git clone.<br>
+<code>https://github.com/Sourabhhsethii/zoom-node-integration.git</code></p>
+<blockquote>
+<p class="has-line-data" data-line-start="60" data-line-end="61">Install the dependent node modules.</p>
+</blockquote>
+<p class="has-line-data" data-line-start="62" data-line-end="63">The app requires the following modules:</p>
+<blockquote>
+<p class="has-line-data" data-line-start="64" data-line-end="67">jsonwebtoken : Provides a way to generate JWT with jwt.sign() method.<br>
+request-promise: Provides a way to Request call objects with .then() method.<br>
+express: Web application framework for Node.js.</p>
+</blockquote>
+<p class="has-line-data" data-line-start="68" data-line-end="69">To install these dependencies in your project directory, type <code>npm-install &lt;module-name&gt;</code> in your terminal.</p>
+<h3 class="code-line" data-line-start=70 data-line-end=71 ><a id="Quick_Start_70"></a>Quick Start</h3>
+<p class="has-line-data" data-line-start="72" data-line-end="73">To generate JWT, you have to provide your API Key and API Secret credentials. You can locate these credentials in your app’s configuration by going to Zoom Marketplace &gt; Manage &gt; &lt;YourApp&gt; &gt; App Credentials. If you haven’t already registered your app in the marketplace, you will have to create an app here to get your credentials. For the purpose of this sample app, you only need your credentials and you do not have to fill out any additional information while registering the app.</p>
+<blockquote>
+<p class="has-line-data" data-line-start="74" data-line-end="75">In the config.js file, input your client API Key &amp; Secret credentials.</p>
+</blockquote>
+<pre><code class="has-line-data" data-line-start="76" data-line-end="83">    const config = {
+    production:{    
+        APIKey : 'Your environment API Key',
+        APISecret : 'Your environment API Secret'
+    }
+    };
+</code></pre>
+<blockquote>
+<p class="has-line-data" data-line-start="83" data-line-end="85">Set your environment varaibles.<br>
+<code>export NODE_NEV=[environment name] (e.g. export NODE_NEV=production)</code></p>
+</blockquote>
+<blockquote>
+<p class="has-line-data" data-line-start="86" data-line-end="88">Start the node app.<br>
+Type <code>node index.js</code> in your terminal from within the project directory.</p>
+</blockquote>
+<blockquote>
+<p class="has-line-data" data-line-start="89" data-line-end="91">Enter your email and view the API’s response.<br>
+When you run the app, you will see a form that asks for an email address. Provide your Zoom email address and you will see your JWT and other information related to your account.</p>
+</blockquote>
+<p class="has-line-data" data-line-start="92" data-line-end="93">The following code snippet generates the JWT using your Client Credentials:</p>
+<pre><code class="has-line-data" data-line-start="94" data-line-end="100">    const payload = {
+    iss: config.APIKey,
+    exp: ((new Date()).getTime() + 5000)
+};
+    const token = jwt.sign(payload, config.APISecret);
+</code></pre>
+<p class="has-line-data" data-line-start="100" data-line-end="101">After you submit an email address, it will post the entered information and the email will be used to make a <strong>Retrieve User</strong> Zoom API call and you will be redirected to localhost:3000/userinfo page that displays the API response - information related to the user. This is achieved through an HTTP POST method. You can make API calls to other ZOOM endpoints by replacing the uri shown in the snippet below with another uri of your choice. You can find more about ZOOM APIs here.</p>
+<pre><code class="has-line-data" data-line-start="103" data-line-end="118">   var options = {
+   uri: &quot;https://api.zoom.us/v2/users/&quot;+email, 
+   qs: {
+       status: 'active' 
+   },
+   auth: {
+       'bearer': token
+   },
+   headers: {
+       'User-Agent': 'Zoom-api-Jwt-Request',
+       'content-type': 'application/json'
+   },
+   json: true //Parse the JSON string in the response
+};
+</code></pre>
+<h3 class="code-line" data-line-start=119 data-line-end=120 ><a id="API_Avaliable_119"></a>API Avaliable</h3>
+<p class="has-line-data" data-line-start="121" data-line-end="122">Documentation for JWT is available <a href="https://marketplace.zoom.us/docs/guides/authorization/jwt">here</a>. You can learn more about Zoom API <a href="https://marketplace.zoom.us/docs/api-reference/introduction">here</a>.</p>
+<h2 class="code-line" data-line-start=126 data-line-end=127 ><a id="Support_126"></a>Support</h2>
+<p class="has-line-data" data-line-start="128" data-line-end="129">For any questions or issues, please visit our new Community Support Forum at <a href="https://devforum.zoom.us/">https://devforum.zoom.us/</a></p>

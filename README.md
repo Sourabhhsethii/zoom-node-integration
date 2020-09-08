@@ -1,13 +1,62 @@
-# Make Zoom API call using JWT
+# Make Zoom API call using JWT Using Node JS
 
-> With this app, you can learn how to generate JWT and use the JWT to authenticate and make a Zoom API call. Follow the steps below to install the app and run it on your computer. 
+> With this NodeJS Application, you can learn how to generate JWT and use the JWT to authenticate and make a Zoom API call. Follow the steps below to install the Application and run it on your computer. 
 
-## Getting Started
+# Getting Started
+
+## API Usage Details for zoom-node-integration application. 
+
+### API userinfo.
+http://localhost:3000/v1/userinfo
+	
+    POST Param
+
+   		"APIKey":"iHUCbf7HSPumwF2Dyj1eGA1234"
+   		"email":"sourabhsethi8888@gmail.com"
+   		"APISecret":"1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
+
+### API listMeeting.
+http://localhost:3000/v1/listMeeting
+	
+    POST Param
+
+   		 "APIKey":"iHUCbf7HSPumwF2Dyj1eGA1234"
+  		 "email":"sourabhsethi8888@gmail.com"
+   		 "APISecret":"1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
+
+### API createMeeting.
+http://localhost:3000/v1/createMeeting
+	
+    POST Param
+		
+        APIKey:"iHUCbf7HSPumwF2Dyj1eGA1234"
+  		email:"sourabhsethi8888@gmail.com"
+   		APISecret:"1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
+		topic : "Test Portal Integration"
+		type : 2 (Integer)
+
+### API deleteMeeting.
+http://localhost:3000/v1/deleteMeeting
+	
+    POST Param
+		
+        APIKey:"iHUCbf7HSPumwF2Dyj1eGA1234"
+   		APISecret:"1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
+		meetingId: 1234567 (Integer)
+
+### API getMeeting.
+http://localhost:3000/v1/getMeeting
+	
+    POST Param
+		
+        APIKey:"iHUCbf7HSPumwF2Dyj1eGA1234"
+   		APISecret:"1234nQFgryGS0lWmOqo6MTTQSIxH0DvBnsSPvrTO"
+		meetingId: 1234567 (Integer)
 
 ### Install
 
 Clone the repo using git clone.
-` git clone https://github.com/zoom/zoom-api-jwt.git`
+` https://github.com/Sourabhhsethii/zoom-node-integration.git`
 
 > Install the dependent node modules.
 
@@ -68,9 +117,12 @@ After you submit an email address, it will post the entered information and the 
 };
 ```
 
-### For more Information about Zooms API and JWT
+### API Avaliable
 
 Documentation for JWT is available [here](https://marketplace.zoom.us/docs/guides/authorization/jwt). You can learn more about Zoom API [here](https://marketplace.zoom.us/docs/api-reference/introduction).
+
+
+
  
 ## Support
 
